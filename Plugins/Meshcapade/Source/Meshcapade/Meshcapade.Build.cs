@@ -21,6 +21,7 @@ public class Meshcapade : ModuleRules
 			new string[] {
 				"Meshcapade/Public/",
 				"Meshcapade/Private/",
+				"Eigen/"
 				// ... add other private include paths required here ...
 			}
 			);

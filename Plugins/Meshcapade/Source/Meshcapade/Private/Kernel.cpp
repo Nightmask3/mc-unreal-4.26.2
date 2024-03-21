@@ -34,7 +34,7 @@ void UKernel::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponen
 
 FQuat UKernel::RodriguesVectorToQuaternion(FVector RodriguesVector)
 {
-	float theta = RodriguesVector.Length();
+	float theta = RodriguesVector.Size();
 	FVector R = RodriguesVector / theta;
 
 	//lifted from /Engine/Source/Runtime/Engine/Private/KismetMathLibrary.cpp
@@ -99,7 +99,7 @@ Eigen::MatrixXd UKernel::GenerateRotationMatrix(float theta, FVector R)
 
 TArray <float> UKernel::RodriguesVectorTo9_MorphTargets(FVector RodriguesVector)
 {
-	float theta = RodriguesVector.Length();
+	float theta = RodriguesVector.Size();
 	FVector R = RodriguesVector / theta;
 
 	Eigen::MatrixXd Rotation_Matrix = GenerateRotationMatrix(theta, R);

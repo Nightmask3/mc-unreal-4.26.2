@@ -6,8 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "math.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "Eigen"
-#include "Quaternion.h"
+#include "Eigen/Eigen"
+#include "Eigen/src/Geometry/Quaternion.h"
 #include "Kernel.generated.h"
 
 
